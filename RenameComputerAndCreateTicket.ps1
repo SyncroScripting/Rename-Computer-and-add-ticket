@@ -9,6 +9,7 @@ Import-Module $env:SyncroModule -WarningAction SilentlyContinue
 # Ticket Variables for the Subject and Ticket Body
 $ticksub = "Computer Asset Renamed - " + $assetname + " renamed to " + $NewComputerName
 $tickbody = "Computer was renamed from " + $assetname + " to " + $NewComputerName + " via script. The name will autoupdate the next time the asset refreshes."
+# Make the ticket comments public or private
 $tickprivate = "True"
 
 # Check if computer is domain joined
